@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/** Font **/
+/*
+@font-face {
+	font-family:'ng';
+	src:url('/ucomic/web2/common/font/ng.eot');
+	src:local(※),
+		url('/ucomic/web2/common/font/ng.eot?#iefix') format('embedded-opentype'),
+		url('/ucomic/web2/common/font/ng.woff') format('woff'),
+		url('/ucomic/web2/common/font/ng.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal
+}
+*/
+
+/** Reset **/
+html,body {font-size:12px;color:#000;line-height:1.2;-webkit-text-size-adjust:none;}
+body,div,form,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,em,p,span,textarea,pre,label,fieldset,th,td,button,a,input,select,hr {margin:0;padding:0;font-family:Arial, dotum;word-break:break-all;}
+h1,h2,h3,h4,h5,h6,strong,th {font-weight:normal;}
+em,span,strong,a,button,i {font-size:100%;}
+em,address {font-style:normal;}
+ol,ul,dl {list-style:none;}
+fieldset,img,hr,button {border:0;}
+img,input,textarea,select {vertical-align:top;}
+table {width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed;}
+legend,caption {overflow:hidden;width:0;height:0;padding:0;font-size:0;line-height:0;}
+a {color:#2c2c2c;text-decoration:none;}
+a:hover {text-decoration:none;}
+button {overflow:visible;margin:0;padding:0;background:none;border-radius:0;cursor:pointer;}
+input,textarea,select {-webkit-appearance:none;appearance:none;} /* 모바일 한정 */
+input[type=text]::-ms-clear,input[type=password]::-ms-clear,input[type=text]::-ms-reveal,input[type=password]::-ms-reveal {display:none;}
+.blind {position:absolute;top:0;left:0;overflow:hidden;width:0;height:0;font-size:0;line-height:0;}
+.clfix:after {content:"";display:block;clear:both;visibility:hidden;height:0;}
+#skipNavi {width:100%;position:absolute;top:0;left:0;}
+#skipNavi a {display:block;position:absolute;top:-10000px;left:0;z-index:500;width:100%;font-size:12px;text-align:center;}
+#skipNavi a:hover,#skipNavi a:focus,#skipNavi a:active {position:absolute;top:0;z-index:500;padding:5px 0;background:#1d60a7;color:#fff;}
+
+/** Layout **/
+
+/** Common **/
+
+/* List */
+
+/* Table */
+
+/* Button */
+
+/** Login **/
+
+/** Main **/

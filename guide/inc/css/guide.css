@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+/* Font */
+@font-face {
+	font-family:'ng';
+	src:url('../font/NanumBarunGothic.eot');
+	src:local(※),
+		url('../font/NanumBarunGothic.eot?#iefix') format('embedded-opentype'),
+		url('../font/NanumBarunGothic.woff') format('woff'),
+		url('../font/NanumBarunGothic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal
+}
+
+@font-face {
+	font-family:'ngB';
+	src:url('../font/NanumBarunGothicBold.eot');
+	src:local(※),
+		url('../font/NanumGothicBold.eot?#iefix') format('embedded-opentype'),
+		url('../font/NanumGothicBold.woff') format('woff'),
+		url('../font/NanumGothicBold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal
+}
+
+html, body {font-family:ng, Arial, Dotum sans-serif;font-size:14px;color:#666;}
+body {line-height:1.2;word-break:break-all;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,select,input,textarea,p,blockquote,th,td {margin:0;padding:0;}
+header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption {display:block;}
+h1,h2,h3,h4,h5,h6,optgroup,strong,th {font-weight:normal;}
+em,span,strong,i {font-size:100%;}
+img, legend, fieldset {border:none;}
+em,address{font-style:normal;}
+button {margin:0;padding:0;border:0;border-radius:0;background:none;}
+table {border-collapse:collapse;border-spacing:0;}
+caption, legend {visibility:hidden;width:0;height:0;font-size:0;line-height:0;}
+ul, ol, li {list-style-type:none;}
+hr {display:none;}
+legend,caption,hr{display:none;}
+br,p{letter-spacing:normal;}
+a{color:#777; text-decoration:none;}
+a:hover{text-decoration:none;}
+
+/* Common */
+.fl {float:left !important;}
+.fr {float:right !important;}
+#guideWrap {position:relative; width:100%;}
+#guideHeader {width:100%;min-height:80px;background:#24abf7;box-shadow:0 2px 5px #ccc;}
+#guideHeader:after {content:"";display:block;clear:both;}
+#guideWrap #footer {padding:15px 0 10px;border:0;background:#24abf7;font-size:18px;color:#fff;text-align:center;}
+
+/* Path */
+#guideHeader .total {margin:30px 50px 0 0;font-size:20px;color:#fff;}
+#guideHeader .total span span {margin:0 4px;}
+#guideHeader .total span em {color:#ccc;}
+.pathList {padding:50px 15px;}
+.pathList .naviMenu {margin-bottom:20px;}
+.pathList .naviMenu > ul:after {content:"";display:block;clear:both;}
+.pathList .naviMenu > ul > li {float:left;margin-left:12px;text-align:center;}
+.pathList .naviMenu > ul > li:first-child {margin-left:0;padding-left:0;}
+.pathList .naviMenu .allMenu,
+.pathList .naviMenu .menu {font-size:14px;font-family:ngB;color:#000;}
+.pathList .naviMenu .menu .countWrap .progress {font-size:12px;color:#777;}
+.pathList .pathTbl{width:100%;}
+.pathList .pathTbl thead tr th{padding:15px 0;border-top:2px solid #7a7a7a;border-bottom:1px solid #bfbfbf;border-left:1px solid #ddd;font-family:ngB;font-size:13px;color:#000;}
+.pathList .pathTbl thead tr th:first-child {border-left:0;}
+.pathList .pathTbl tbody tr th,
+.pathList .pathTbl tbody tr td{padding:10px 0 10px 20px;font-size:12px;color:#000;border-right:1px solid #ddd;border-bottom:1px solid #ddd;text-align:left;}
+.pathList .pathTbl tbody th {background:#f2f2f2;}
+.pathList .pathTbl tbody th > .txt,
+.pathList .pathTbl tbody td > .txt {margin-top:5px;color:#888;}
+.pathList .pathTbl tr.on th,
+.pathList .pathTbl tr.on td {background:#f2f2f2;}
+.pathList .pathTbl .url a {color:#009e00;}
+.pathList .pathTbl .url a:hover {text-decoration:underline;}
+.pathList .pathTbl .dep1 {font-family:ngB;}
+.pathList .pathTbl .dep2,
+.pathList .pathTbl .dep3,
+.pathList .pathTbl .dep4 {padding-top:15px;vertical-align:top;}
+.pathList .pathTbl .date {font-size:12px;}
+.pathList .pathTbl .date p {}
+.pathList .pathTbl .date a {font-size:10px;}
+.pathList .pathTbl .date a:hover {color:#ff0000;}
+.pathList .pathTbl .txt {border-right:0;}
+.pathList .pathTbl .txt ul li {margin-top:5px;}
+.pathList .pathTbl .txt ul li:first-child {margin-top:0;}
+.pathList .pathTbl tbody tr td.check {padding:0;font-size:17px;text-align:center;}
+.pathList .pathTbl tbody tr.del .tit,
+.pathList .pathTbl tbody tr.del .url a {text-decoration:line-through;color:#ff0000;}
+
+/* Guide */
+#guideHeader h1 {float:left;margin:20px 0 0 20px;font-family:ngB;font-size:30px;color:#fff;}
+#guideHeader .left{float:left;margin:30px 0 0 10px;padding-left:10px;border-left:1px solid #fff;font-size:20px;color:#fff;}
+#guideContents {padding:50px;}
+.guideTit {padding-left:15px;background:url(../images/bul_dot.gif) no-repeat 0 12px;font-family:ngB;font-size:26px;color:#000;}
+.section {margin-bottom:40px;padding-bottom:40px;border-bottom:1px dashed #000;}
+.section > .info {margin:10px 0 0 15px;font-size:16px;color:#333;}
+.section > .info p {position:relative;margin-top:5px;padding-left:12px;}
+.section > .info p:before {content:"";position:absolute;top:9px;left:0;width:5px;height:1px;background:#333;}
+.section > .info p:first-child {margin-top:0;}
+.section > .info em {color:#ff0000;}
+.section > .viewWrap {}
+.section > .viewWrap > .view {margin-top:50px;}
+.listDot {margin:20px 0 0 15px;}
+.listDot > li {margin-top:10px;padding-left:10px;background:url(../images/bul_dot_small.gif) no-repeat 0 6px;}
+.listDot > li em {color:#ff0000;}
+.listDot > li:first-child {margin-top:0;}
