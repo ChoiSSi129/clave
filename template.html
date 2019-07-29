@@ -53,11 +53,126 @@
 
     <!-- Container -->
     <div id="container">
-        <div class="topContents">
+        <!--
+            대륙별 Class 값
+            북미 - northAmerica
+            중미 - centralAmerica
+            캐러비안 - caribbean
+            남미 - southAmerica
+            아프리카 - africa
+            유럽 - europe
+            아시아 - asia
+            오세아니아 - oceania
+        -->
+        <!-- BigBanner -->
+        <div class="bigBanner centralAmerica">
             <div class="innerWrap">
-                topContents
+                <ul style="width:10000px;">
+                    <li>
+                        <p class="tit">TRAVEL</p>
+                        <div class="imgWrap">
+                            <img src="/inc/images/temp/temp_banner.jpg" alt="">
+                        </div>
+                        <div class="txtBox">
+                            <p class="num">01</p>
+                            <p class="txt">뉴욕에서 카페라떼 한잔</p>
+                            <p class="tit">뉴욕 마이애미 9일</p>
+                            <p class="price"><em>1,350,000</em>원~</p>
+                            <a href="" class="btnMore">자세히 보기</a>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="tit">TRAVEL</p>
+                        <div class="imgWrap">
+                            <img src="/inc/images/temp/temp_banner.jpg" alt="">
+                        </div>
+                        <div class="txtBox">
+                            <p class="num">01</p>
+                            <p class="txt">뉴욕에서 카페라떼 한잔</p>
+                            <p class="tit">뉴욕 마이애미 9일</p>
+                            <p class="price"><em>1,350,000</em>원~</p>
+                            <a href="" class="btnMore">자세히 보기</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="btnWrap">
+                <p class="count"><em>1</em> / 7</p>
+                <button type="button" class="btnPrev">이전</button>
+                <button type="button" class="btnNext on">다음</button>
             </div>
         </div>
+        <!-- // BigBanner -->
+
+        <!-- TravelCountry -->
+        <div class="travelCountry">
+            <div class="innerWrap">
+                <p class="tit">끌라베와 만나는 여행</p>
+                <div class="tabWrap">
+                    <ul class="tabList len8"> <!-- 탭 갯수만큼 len(n) 클레스 제어 -->
+                        <li class="current"><a href="#">북미</a></li>
+                        <li><a href="#">중미</a></li>
+                        <li><a href="#">캐러비안</a></li>
+                        <li><a href="#">남미</a></li>
+                        <li><a href="#">아프리카</a></li>
+                        <li><a href="#">유럽</a></li>
+                        <li><a href="#">아시아</a></li>
+                        <li><a href="#">오세아니아</a></li>
+                    </ul>
+    
+                    <div class="countryWrap">
+                        <div class="country">
+                            <p class="tit">NORTH AMERICA</p>
+                            <div class="selectCountry">
+                                <a href="" class="current">미국</a>
+                                <a href="">캐나다</a>
+                            </div>
+                            <div class="conWrap">
+                                <ul class="slideList">
+                                    <li>
+                                        <a href="">
+                                            <div class="imgWrap">
+                                                <p class="flag">BEST</p>
+                                                <img src="/inc/images/temp/temp_country.jpg" alt="">
+                                            </div>
+                                            <div class="txtWrap">
+                                                <p class="tit">캘리포니아 코스트 드라이빙 일주</p>
+                                                <p class="txt">캘리포니아 해안도로를 따라서 드라이브</p>
+                                                <p class="info">
+                                                    <span class="term"><em>7</em>박 <em>9</em>일</span>
+                                                    <span class="price"><em>1,350,000</em>원~</span>
+                                                </p>
+                                            </div>
+                                        </a>
+
+                                        <a href="">
+                                            <div class="imgWrap">
+                                                <p class="flag">BEST</p>
+                                                <img src="/inc/images/temp/temp_country.jpg" alt="">
+                                            </div>
+                                            <div class="txtWrap">
+                                                <p class="tit">캘리포니아 코스트 드라이빙 일주</p>
+                                                <p class="txt">캘리포니아 해안도로를 따라서 드라이브</p>
+                                                <p class="info">
+                                                    <span class="term"><em>7</em>박 <em>9</em>일</span>
+                                                    <span class="price"><em>1,350,000</em>원~</span>
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="btnWrap">
+                                    <button type="button" class="btnPrev">이전</button>
+                                    <button type="button" class="btnNext">다음</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- // TravelCountry -->
 
         <!-- Contents -->
         <div class="contents">
@@ -72,6 +187,7 @@
             </div>
             <!-- // Location -->
 
+            <!-- TabWrap -->
             <div class="tabWrap">
                 <ul class="tabList">
                     <li class="current"><a href="#">특전 및 상품소개</a></li>
@@ -81,8 +197,94 @@
                     <li><a href="#">취소 규정 및 유의사항</a></li>
                 </ul>
             </div>
+            <!-- // TabWrap -->
 
-             contents
+             <!-- TravelList -->
+            <div class="travelList">
+                <ul>
+                    <li>
+                        <a href="">
+                            <div class="imgWrap">
+                                <img src="/inc/images/temp/temp_travel.jpg" alt="">
+                            </div>
+                            <div class="txtWrap">
+                                <p class="tit">캘리포니아 코스트 드라이빙 일주</p>
+                                <p class="txt">캘리포니아 해안도로를 따라서 드라이브</p>
+                                <p class="info">
+                                    <span class="term"><em>7</em>박 <em>9</em>일</span>
+                                    <span class="price"><em>1,350,000</em>원~</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="imgWrap">
+                                <img src="/inc/images/temp/temp_travel.jpg" alt="">
+                            </div>
+                            <div class="txtWrap">
+                                <p class="tit">캘리포니아 코스트 드라이빙 일주</p>
+                                <p class="txt">캘리포니아 해안도로를 따라서 드라이브</p>
+                                <p class="info">
+                                    <span class="term"><em>7</em>박 <em>9</em>일</span>
+                                    <span class="price"><em>1,350,000</em>원~</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="imgWrap">
+                                <img src="/inc/images/temp/temp_travel.jpg" alt="">
+                            </div>
+                            <div class="txtWrap">
+                                <p class="tit">캘리포니아 코스트 드라이빙 일주</p>
+                                <p class="txt">캘리포니아 해안도로를 따라서 드라이브</p>
+                                <p class="info">
+                                    <span class="term"><em>7</em>박 <em>9</em>일</span>
+                                    <span class="price"><em>1,350,000</em>원~</span>
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- // TravelList -->
+
+            <!-- PlanList -->
+            <div class="planList">
+                <ul>
+                    <li>
+                        <a href="">
+                            <div class="imgWrap">
+                                <img src="/inc/images/temp/temp_plan.jpg" alt="">
+                            </div>
+                            <div class="txtWrap">
+                                <p class="txt">Vacation</p>
+                                <p class="tit">
+                                    끌라베가 제안하는<br>
+                                    미국 여행의 특별한 숙소
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="imgWrap">
+                                <img src="/inc/images/temp/temp_plan.jpg" alt="">
+                            </div>
+                            <div class="txtWrap">
+                                <p class="txt">Special</p>
+                                <p class="tit">
+                                    당신이 꿈꾸는<br>
+                                    미국 여행의 모든것 
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- // PlanList -->
         </div>
         <!-- // Contents -->
 
