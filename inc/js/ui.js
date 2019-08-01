@@ -98,4 +98,8 @@ $(function() {
 	app.$body = $("body");
 	app.$dim = app.$body.find(".dim");
 	app.UI.startup();
+
+	$(".productDetail .imgWrap .slideCon").slick({
+		dots: true
+	});
 });

@@ -319,17 +319,18 @@ input[type=text]::-ms-clear,input[type=password]::-ms-clear,input[type=text]::-m
 /* ProductDetail */
 .productDetail {position:relative;min-height:480px;padding-bottom:49px;}
 .productDetail .imgWrap {position:relative;float:left;overflow:hidden;width:691px;}
-.productDetail .imgWrap ul {overflow:hidden;width:691px;height:480px;}
-.productDetail .imgWrap ul:after {content:"";display:block;clear:both;}
-.productDetail .imgWrap li {float:left;}
-.productDetail .imgWrap .btnPrev,
-.productDetail .imgWrap .btnNext {position:absolute;top:210px;width:22px;height:42px;font-size:0;}
-.productDetail .imgWrap .btnPrev {left:20px;background:url(/inc/images/btn/btn_detail_left.png) no-repeat 0 0;}
-.productDetail .imgWrap .btnNext {right:20px;background:url(/inc/images/btn/btn_detail_right.png) no-repeat 0 0;}
-.productDetail .imgWrap .paging {position:absolute;bottom:19px;left:0;width:100%;text-align:center;}
-.productDetail .imgWrap .paging .btnPaging {width:7px;height:7px;margin-left:5px;border-radius:50%;background:#fff;opacity:.44;font-size:0;}
-.productDetail .imgWrap .paging .btnPaging:first-child {margin-left:0;}
-.productDetail .imgWrap .paging .btnPaging.current {opacity:1;}
+.productDetail .imgWrap .slideCon {overflow:hidden;width:691px;height:480px;}
+.productDetail .imgWrap .slideCon:after {content:"";display:block;clear:both;}
+.productDetail .imgWrap .slideCon .slide {float:left;}
+.productDetail .imgWrap .slideCon .slick-prev,
+.productDetail .imgWrap .slideCon .slick-next {position:absolute;top:210px;z-index:10;width:22px;height:42px;font-size:0;}
+.productDetail .imgWrap .slideCon .slick-prev {left:20px;background:url(/inc/images/btn/btn_detail_left.png) no-repeat 0 0;}
+.productDetail .imgWrap .slideCon .slick-next {right:20px;background:url(/inc/images/btn/btn_detail_right.png) no-repeat 0 0;}
+.productDetail .imgWrap .slick-dots {position:absolute;bottom:19px;left:0;width:100%;text-align:center;}
+.productDetail .imgWrap .slick-dots li {display:inline-block;margin-left:5px;}
+.productDetail .imgWrap .slick-dots li:first-child {margin-left:0;}
+.productDetail .imgWrap .slick-dots li button {width:7px;height:7px;border-radius:50%;background:#fff;opacity:.44;font-size:0;}
+.productDetail .imgWrap .slick-dots li.slick-active button {opacity:1;}
 
 .productDetail .txtWrap {margin-left:742px;}
 .productDetail .txtWrap .txtBox {margin-bottom:25px;padding:0 3px 30px;border-bottom:1px solid #f0f0f0;}
